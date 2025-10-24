@@ -7,14 +7,17 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1 class="headline">calc <span>(short for calculator)</span></h1>
-  
+  <header>
+    <h1 class="headline">calc <span>(short for calculator)</span></h1>
+    <button id="theme-toggle" aria-label="Toggle theme">🌙</button>
+  </header>
+
   <div class="calculator">
-    <div class="display" id="display">0</div>
+    <div id="display" class="display">0</div>
     <div class="buttons">
       <button class="btn clear">C</button>
-      <button class="btn">←</button>
-      <button class="btn">%</button>
+      <button class="btn">±</button>
+      <button class="btn">√</button>
       <button class="btn operator">/</button>
 
       <button class="btn">7</button>
@@ -34,6 +37,7 @@
 
       <button class="btn zero">0</button>
       <button class="btn">.</button>
+      <button class="btn">x²</button>
       <button class="btn equal">=</button>
     </div>
   </div>
