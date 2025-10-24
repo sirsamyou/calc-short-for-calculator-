@@ -1,0 +1,98 @@
+/* Reset and base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #1e1e2e, #2a2a3d);
+  color: #fff;
+}
+
+/* Headline */
+.headline {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #fff;
+  letter-spacing: 1px;
+  text-align: center;
+  opacity: 0.85;
+}
+.headline span {
+  font-weight: 300;
+  color: #b5b5b5;
+}
+
+/* Calculator box */
+.calculator {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  border-radius: 16px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+  padding: 20px;
+  width: 300px;
+}
+
+.display {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 10px;
+  text-align: right;
+  padding: 20px;
+  font-size: 2rem;
+  color: #fff;
+  margin-bottom: 15px;
+  overflow: hidden;
+  word-wrap: break-word;
+}
+
+/* Buttons */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.btn {
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  color: #fff;
+  padding: 15px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+}
+
+.btn:active {
+  transform: scale(0.95);
+}
+
+/* Operators and special buttons */
+.operator {
+  background: rgba(0, 255, 200, 0.2);
+}
+
+.equal {
+  background: rgba(0, 200, 255, 0.3);
+  grid-column: span 1;
+}
+
+.clear {
+  background: rgba(255, 80, 80, 0.25);
+}
+
+.zero {
+  grid-column: span 2;
+}
